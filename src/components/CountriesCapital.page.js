@@ -4,13 +4,13 @@ import {useAsync} from '../hooks/useAsync'
 
 async function bootstrapAppData() {
   let data = null;
-  const resp = await client({ url: '/superheroes' });
+  const resp = await client({ url: '/countries' });
   data = resp.data
   return data
 }
 
 
-export const SuperHeroesPage = () => {
+export const CountriesPage = () => {
 
   const {
     isError,
@@ -40,10 +40,10 @@ export const SuperHeroesPage = () => {
 
   return (
     <>
-    <pre>{JSON.stringify(data, null, 2) }</pre>
-      <h2>Super Heroes Page</h2>
-      {isSuccess && data && data.map(hero => {
-        return <div key={hero.name}>{hero.name}</div>
+    {/* <pre>{JSON.stringify(data, null, 2) }</pre> */}
+      <h2>Countries Capital</h2>
+      {isSuccess && data && data.map(scandata => {
+        return <div key={scandata.name}>{scandata.name} - {scandata.city}</div>
       })}
     </>
   )

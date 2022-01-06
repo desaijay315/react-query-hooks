@@ -1,19 +1,19 @@
 {
-  "superheroes": [
+  "countries": [
     {
       "id": 1,
-      "name": "Batman",
-      "alterEgo": "Bruce Wayne"
+      "name": "India",
+      "city": "Mumbai"
     },
     {
       "id": 2,
-      "name": "Superman",
-      "alterEgo": "Clark Kent"
+      "name": "USA",
+      "city": "New York"
     },
     {
       "id": 3,
-      "name": "Wonder Woman",
-      "alterEgo": "Princess Diana"
+      "name": "Australia",
+      "city": "Melbourne"
     }
   ]
 }

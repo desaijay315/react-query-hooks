@@ -29,26 +29,3 @@ const client = ({ ...options }) => {
 
 export {client}
 
-
-//how to use??
-
-/**
- * 
- * import the client post the data
- 
- const addPreRegData = data => {
-  return client({ url: '/preregdata', method: 'post', data })
-} 
- **/
-
-
-/**
-fetching the data
-get PregReg Data
-
-const fetchPreRegData = () => {
-  return client({ url: '/prereg' })
-}
-
-*/
-  
